@@ -65,6 +65,13 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libutils.so','libutils-v32.so')
         .replace_needed('libalsautils.so','libalsautils-v31.so')
         .replace_needed('libtinyxml2.so', 'libtinyxml2-bp2a.so'),
+    (
+        'vendor/lib/libcodec2_mtk_vdec.so',
+        'vendor/lib64/libcodec2_mtk_vdec.so',
+        'vendor/lib/libcodec2_mtk_venc.so',
+        'vendor/lib64/libcodec2_mtk_venc.so'
+    ): blob_fixup()
+        .replace_needed('libformatter.so', 'libformatter-mtk.so'),
     ('vendor/lib64/hw/mt6855/android.hardware.camera.provider@2.6-impl-mediatek.so','vendor/lib64/mt6855/libmtkcam_stdutils.so',
      'vendor/lib64/sensors.moto.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so')
