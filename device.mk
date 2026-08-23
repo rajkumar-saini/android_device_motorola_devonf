@@ -409,6 +409,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     hostapd \
+    wlan_assistant \
     wpa_supplicant \
     android.hardware.wifi.supplicant@1.4.vendor
 
