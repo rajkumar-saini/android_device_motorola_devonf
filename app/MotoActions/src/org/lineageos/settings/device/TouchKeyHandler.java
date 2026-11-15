@@ -61,6 +61,8 @@ public class TouchKeyHandler implements DeviceKeyHandler {
     private static final String PULSE_ACTION = "com.android.systemui.doze.pulse";
     private static final int GESTURE_REQUEST = 0;
 
+    private static final int EVENT_PROCESS_WAKELOCK_DURATION = 500;
+
     private final Context mContext;
     private final AudioManager mAudioManager;
     private final PowerManager mPowerManager;
@@ -149,7 +151,7 @@ public class TouchKeyHandler implements DeviceKeyHandler {
                 processEvent(action);
             } else {
                 mGestureWakeLock.acquire();
-                mEventHandler.sendMessage();
+                mEventHandler.sendMessage(msg);
             }
         }
 
