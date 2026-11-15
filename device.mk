@@ -69,8 +69,7 @@ PRODUCT_PACKAGES += \
     audio_policy.stub \
     libalsautils \
     libopus.vendor \
-    libspatialaudio \
-    audioclient-types-aidl-cpp.vendor \
+    audioclient-types-aidl-cpp.vendor
 
 PRODUCT_PACKAGES += \
     LunarisDolby \
@@ -117,7 +116,6 @@ $(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
 
 # Display
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0.vendor \
     libhwc2on1adapter \
     libhwc2onfbadapter
 
