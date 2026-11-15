@@ -36,6 +36,10 @@ lib_fixups: lib_fixups_user_type = {
 
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/lib64/libsink-mtk.so': blob_fixup()
+        .add_needed('libaudioclient_shim.so'),
+    'vendor/lib64/libtinyxml2-bp2a.so': blob_fixup()
+        .fix_soname(),
     'system_ext/priv-app/ImsService/ImsService.apk': blob_fixup()
         .apktool_patch('ims-patches'),
     'system_ext/priv-apk/MtkGbaService/MtkGbaService.apk': blob_fixup()
