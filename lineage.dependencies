@@ -1,0 +1,32 @@
+[
+  {
+    "repository": "rajkumar-saini/device_motorola_devonf-kernel",
+    "target_path": "device/motorola/devonf-kernel",
+    "branch": "seventeen"
+  },
+  {
+    "repository": "rajkumar-saini/vendor_motorola_devonf",
+    "target_path": "vendor/motorola/devonf",
+    "branch": "seventeen"
+  },
+  {
+    "remote": "gitlab",
+    "repository": "rajkumar-saini/vendor_motorola_devonf-motcamera",
+    "target_path": "vendor/motorola/devonf-motcamera",
+    "branch": "seventeen"
+  },
+  {
+    "repository": "rajkumar-saini/hardware_mediatek",
+    "target_path": "hardware/mediatek",
+    "branch": "seventeen"
+  },
+  {
+    "repository": "rajkumar-saini/device_mediatek_sepolicy_vndr",
+    "target_path": "device/mediatek/sepolicy_vndr",
+    "branch": "seventeen"
+  },
+  {,
+    "repository": "rajkumar-saini/vendor_bcr",
+    "target_path": "vendor/bcr"
+  }
+]
