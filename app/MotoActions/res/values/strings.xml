@@ -40,4 +40,7 @@
     <string name="tap_gesture_action_ambient_display">Show ambient display</string>
     <string name="tap_gesture_action_wake_device">Wake device</string>
 
+
+    <string name="doze_settings_help_title">About Doze settings</string>
+    <string name="doze_settings_help_text">Configure when the device wakes its display for pick-up and pocket detection.</string>
 </resources>
